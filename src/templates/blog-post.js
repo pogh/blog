@@ -12,14 +12,14 @@ const BlogPostTemplate = ({
   const siteTitle = site.siteMetadata?.title || `Title`
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={post.frontmatter.title}>
       <article
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          {/* <h1 itemProp="headline">{post.frontmatter.title}</h1> */}
           <p>{post.frontmatter.date}</p>
         </header>
         <section

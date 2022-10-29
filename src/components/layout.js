@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
+import Header from "./header"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -22,7 +24,31 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+                  menuLinks {
+                    name
+                    link
+                  }
+              }
+            }
+          }
+        `}
+        render={data => (
+          <React.Fragment>
+            <div>
+              <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={title} />
+            </div>
+          </React.Fragment>
+        )}
+      />
+
+      {/* <header className="global-header">{header}</header> */}
+
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with

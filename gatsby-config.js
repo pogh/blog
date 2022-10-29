@@ -9,6 +9,16 @@ module.exports = {
     siteUrl: `https://blog.spellman.info/`,
     social: {
     },
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'now',
+        link: '/now'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-image`,
