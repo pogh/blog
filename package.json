@@ -7,6 +7,9 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "gatsby": "^5.0.1",
     "gatsby-cli": "^5.0.0",
