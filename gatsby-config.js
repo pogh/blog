@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog One`,
+    title: `It’s a start…`,
     author: {
       name: `Peter`,
-      summary: `who thinks too much.`,
+      summary: ``,
     },
     description: `A starter blog using Gatsby.`,
     siteUrl: `https://blog.spellman.info/`,
@@ -17,6 +17,10 @@ module.exports = {
       {
         name: 'now',
         link: '/now'
+      },
+      {
+        name: 'blog-one',
+        link: '/blog-one'
       }
     ]
   },
@@ -25,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/blog-one`,
+        name: `blog-one`,
       },
     },
     {
