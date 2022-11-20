@@ -9,7 +9,7 @@ const Now = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
 
     return (
-        <Layout location={location} title={siteTitle}>
+        <Layout location={location} title={"now"}>
             <p>
                 This is my now page.
             </p>

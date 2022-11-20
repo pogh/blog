@@ -23,7 +23,7 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={"blog-three"}>
       <p>
         This is an intro text for blog-three.
       </p>
