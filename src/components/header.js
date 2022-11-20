@@ -8,29 +8,27 @@ const Header = ({ siteTitle, menuLinks }) => (
             marginBottom: "1.45rem",
         }}
     >
-        <div
-            style={{
-                marginBottom: "1.45rem",
-            }}
-        >
+        <div>
             <div
                 style={{
                     margin: "0 auto",
                     maxWidth: 960,
-                    padding: "1.45rem 1.0875rem",
                     display: "flex",
                     justifyItems: "space-between",
                     alignItems: "center",
-                }}
-            >
-                <h1 style={{ margin: 0, flex: 1 }}>
-                    <Link to="/">
-                        {siteTitle}
-                    </Link>
-                </h1>
+                    marginTop: 0, 
+                    marginBottom: 0                               
+    }}
+                >
                 <div>
                     <nav>
-                        <ul style={{ display: "flex", flex: 1 }}>
+                        <ul style={{ 
+                                display: "flex", 
+                                flex: 0,
+                                padding: 0,
+                                marginTop: 0, 
+                                marginBottom: 0                               
+                                }}>
                             {menuLinks.map(link => (
                                 <li
                                     key={link.name}
@@ -45,7 +43,11 @@ const Header = ({ siteTitle, menuLinks }) => (
 
                                         }}
                                     >
-                                        <h6>{link.name}</h6>
+                                        <h6 style={{
+                                                marginTop: 0, 
+                                                marginBottom: 0
+                                                }}>
+                                        {link.name}</h6>
                                     </Link>
                                 </li>
                             ))}
@@ -53,12 +55,28 @@ const Header = ({ siteTitle, menuLinks }) => (
                     </nav>
                 </div>
             </div>
+            <div
+                style={{
+                    margin: "0 auto",
+                    maxWidth: 960,
+                    padding: "1.45rem 1.0875rem",
+                    display: "flex",
+                    justifyItems: "space-between",
+                    alignItems: "center",
+                }}
+                >
+                <h1 style={{ margin: 0, flex: 1 }}>
+                        <Link to="/">
+                            {siteTitle}
+                        </Link>
+                </h1>
+            </div>
         </div>
     </header>
 )
 
 Header.propTypes = {
-    siteTitle: PropTypes.string,
+    siteTitle: "PropTypes.string",
 }
 
 Header.defaultProps = {
