@@ -21,6 +21,14 @@ module.exports = {
       {
         name: 'blog-one',
         link: '/blog-one'
+      },
+      {
+        name: 'blog-two',
+        link: '/blog-two'
+      },
+      {
+        name: 'blog-three',
+        link: '/blog-three'
       }
     ]
   },
@@ -29,9 +37,9 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog-one`,
-        name: `blog-one`,
-      },
+        path: `${__dirname}/content`,
+        name: `content`,
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

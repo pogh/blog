@@ -11,7 +11,7 @@ const Now = ({ data, location }) => {
     return (
         <Layout location={location} title={siteTitle}>
             <p>
-                This is paragraph text
+                This is my now page.
             </p>
             <footer>
                 <Bio />

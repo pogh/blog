@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <p>
-        This is an intro text for blog-one.
+        This is an intro text for blog-three.
       </p>
       <Bio />
       <ol style={{ listStyle: `none` }}>
@@ -81,20 +81,20 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {fields: {slug: {regex: "/^\\/blog-one\\/.+\\/$/"}}},
+      filter: {fields: {slug: {regex: "/^\\/blog-three\\/.+\\/$/"}}},
       sort: { fields: [frontmatter___date], order: DESC }
       ){
-        nodes {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
         }
       }
+    }
   }
 `

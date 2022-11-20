@@ -11,7 +11,19 @@ const Home = ({ data, location }) => {
     return (
         <Layout location={location} title={siteTitle}>
             <p>
-                Welcome
+                Welcome.  This is my corner of the internet build with gatsby.
+            </p>
+            <p>
+                This is a link to &nbsp;
+                <Link to="/blog-one">blog-one</Link>
+            </p>
+            <p>
+                This is a link to &nbsp;
+                <Link to="/blog-two">blog-two</Link>
+            </p>
+            <p>
+                This is a link to &nbsp;
+                <Link to="/blog-three">blog-three</Link>
             </p>
             <footer>
                 <Bio />
