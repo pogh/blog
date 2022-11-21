@@ -9,9 +9,11 @@ const Now = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
 
     return (
-        <Layout location={location} title={"now"}>
+        <Layout location={location} title={"What I'm doing now"}>
             <p>
-                This is my now page.
+                This is my now page inspired by <a href="https://sive.rs/now">Derek Sivers</a>,
+                answering the question, “What am I doing now?”  I also like how this question can
+                also be rhetorical.  
             </p>
             <footer>
                 <Bio />

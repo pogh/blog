@@ -11,19 +11,20 @@ const Home = ({ data, location }) => {
     return (
         <Layout location={location} title={siteTitle}>
             <p>
-                Welcome.  This is my corner of the internet build with gatsby.
+                Welcome.  This is my corner of the internet built with <a href="https://www.gatsbyjs.com">Gatsby</a> with
+                continuous deployment using a Git-triggered build to an Azure Static Web App.
             </p>
             <p>
-                This is a link to &nbsp;
-                <Link to="/blog-one">blog-one</Link>
+                <Link to="/blog-one">blog-one</Link> is my technology focussed blog and serves
+                as my online notebook.  
             </p>
             <p>
-                This is a link to &nbsp;
-                <Link to="/blog-two">blog-two</Link>
+                <Link to="/blog-two">blog-two</Link> is about cliché’s I live my life by.  It’s an appreciation of old
+                wisdom in the current times.
             </p>
             <p>
-                This is a link to &nbsp;
-                <Link to="/blog-three">blog-three</Link>
+                <Link to="/blog-three">blog-three</Link> is my online notes for the book I'm going through
+                <span className="fontWeight-bold">Statistics - An Introduction Using R</span>.  It's an attempt to keep me accountable.
             </p>
             <footer>
                 <Bio />
@@ -33,7 +34,6 @@ const Home = ({ data, location }) => {
 }
 
 export default Home
-
 
 export const pageQuery = graphql`
   query {

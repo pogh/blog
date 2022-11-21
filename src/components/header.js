@@ -16,19 +16,19 @@ const Header = ({ siteTitle, menuLinks }) => (
                     display: "flex",
                     justifyItems: "space-between",
                     alignItems: "center",
-                    marginTop: 0, 
-                    marginBottom: 0                               
-    }}
-                >
+                    marginTop: 0,
+                    marginBottom: 0
+                }}
+            >
                 <div>
                     <nav>
-                        <ul style={{ 
-                                display: "flex", 
-                                flex: 0,
-                                padding: 0,
-                                marginTop: 0, 
-                                marginBottom: 0                               
-                                }}>
+                        <ul style={{
+                            display: "flex",
+                            flex: 0,
+                            padding: 0,
+                            marginTop: 0,
+                            marginBottom: 0
+                        }}>
                             {menuLinks.map(link => (
                                 <li
                                     key={link.name}
@@ -44,10 +44,10 @@ const Header = ({ siteTitle, menuLinks }) => (
                                         }}
                                     >
                                         <h6 style={{
-                                                marginTop: 0, 
-                                                marginBottom: 0
-                                                }}>
-                                        {link.name}</h6>
+                                            marginTop: 0,
+                                            marginBottom: 0
+                                        }}>
+                                            {link.name}</h6>
                                     </Link>
                                 </li>
                             ))}
@@ -64,11 +64,11 @@ const Header = ({ siteTitle, menuLinks }) => (
                     justifyItems: "space-between",
                     alignItems: "center",
                 }}
-                >
+            >
                 <h1 style={{ margin: 0, flex: 1 }}>
-                        <Link to="/">
-                            {siteTitle}
-                        </Link>
+                    <Link to="/">
+                        {siteTitle}
+                    </Link>
                 </h1>
             </div>
         </div>
