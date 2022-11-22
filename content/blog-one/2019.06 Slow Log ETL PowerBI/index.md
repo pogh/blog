@@ -104,7 +104,7 @@ Here’s a report I through together.  Beats a text file, processed or unprocess
 
 ### Database Load
 
-This shows basic load on the database.  Top graphs shows the numbe of queries, the bottom graph shows the number of rows being returned.  We can see the sync running every half an hour.  You can also click on the graph and it will show the queries running at that time point.
+This shows basic load on the database.  Top graphs shows the number of queries, the bottom graph shows the number of rows being returned.  We can see the sync running every half an hour.  You can also click on the graph and it will show the queries running at that time point.
 
 ![Database Load](./images/PBI_1.png)
 

@@ -20,7 +20,7 @@ for the ETL.
 
 ## Fact Table Design
 
-Since I’m demostrating the technology there are only two fact tables, the more interesting
+Since I’m demonstrating the technology there are only two fact tables, the more interesting
 is the FactAudit table.
 
 ![FactAudit](./images/FactAudit.png)
@@ -48,7 +48,7 @@ This is what the data flow looks like.
 
 ### Fact Table Partial Load
 
-The second table I added was too big to TRUNCATE / Load every night, so I need to implment a partial load strategy.
+The second table I added was too big to TRUNCATE / Load every night, so I need to implement a partial load strategy.
 
 ![DF2](./images/DF2.png)
 
@@ -90,7 +90,7 @@ This is the report I created.  The goal is to enable the end users to pull basic
 ![PBI1](./images/PBI1.png)
 
 Since every presentation I’ve ever been too for Power BI has this world map, I’ve
-included it too.  I'm trying to inspire the client to show them what's possible.
+included it too.  I’m trying to inspire the client to show them what’s possible.
 
 ![PBI2](./images/PBI2.png)
 
