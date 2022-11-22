@@ -11,20 +11,19 @@ const Home = ({ data, location }) => {
     return (
         <Layout location={location} title={siteTitle}>
             <p>
-                Welcome.  This is my corner of the internet built with <a href="https://www.gatsbyjs.com">Gatsby</a> with
-                continuous deployment using a Git-triggered build to an Azure Static Web App.
+                Welcome.  This is my corner of the internet built with <a href="https://www.gatsbyjs.com">Gatsby</a> using 
+                continuous deployment a Git-triggered build to an Azure Static Web App.
             </p>
             <p>
-                <Link to="/blog-one">blog-one</Link> is my technology focussed blog and serves
-                as my online notebook.  
+                <Link to="/blog-one">blog-one</Link> is my technology focussed blog.  
             </p>
             <p>
-                <Link to="/blog-two">blog-two</Link> is about cliché’s I live my life by.  It’s an appreciation of old
+                <Link to="/blog-two">blog-two</Link> is my online notes for the book I'm going through
+                <span style={{ fontWeight: 'bold' }}>Statistics - An Introduction Using R</span>.  
+            </p>
+            <p>
+                <Link to="/blog-three">blog-three</Link> is about cliché’s I live my life by.  It’s an appreciation of old
                 wisdom in the current times.
-            </p>
-            <p>
-                <Link to="/blog-three">blog-three</Link> is my online notes for the book I'm going through
-                <span className="fontWeight-bold">Statistics - An Introduction Using R</span>.  It's an attempt to keep me accountable.
             </p>
             <footer>
                 <Bio />
