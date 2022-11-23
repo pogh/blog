@@ -18,8 +18,7 @@ const Home = ({ data, location }) => {
                 <Link to="/blog-one">blog-one</Link> is my technology focussed blog.  
             </p>
             <p>
-                <Link to="/blog-two">blog-two</Link> is my online notes for the book I'm going through
-                <span style={{ fontWeight: 'bold' }}>Statistics - An Introduction Using R</span>.  
+                <Link to="/blog-two">blog-two</Link> is my online notes for the book I'm going through <span style={{ fontWeight: 'bold' }}>Statistics - An Introduction Using R</span>.  
             </p>
             <p>
                 <Link to="/blog-three">blog-three</Link> is about clichés I live my life by.  It’s an appreciation of old
