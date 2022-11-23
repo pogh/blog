@@ -22,7 +22,7 @@ const Home = ({ data, location }) => {
                 <span style={{ fontWeight: 'bold' }}>Statistics - An Introduction Using R</span>.  
             </p>
             <p>
-                <Link to="/blog-three">blog-three</Link> is about cliché’s I live my life by.  It’s an appreciation of old
+                <Link to="/blog-three">blog-three</Link> is about clichés I live my life by.  It’s an appreciation of old
                 wisdom in the current times.
             </p>
             <footer>
