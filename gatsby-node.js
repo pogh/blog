@@ -42,8 +42,43 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (posts.length > 0) {
     posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+      var previousPostId
+      var nextPostId
+
+      // Get the root folder of the current node
+      var path = post.fields.slug;
+      var indexOfFirst = path.indexOf('/', 1);
+      var thisPathRoot = path.substring(1, indexOfFirst);
+
+      // If the previous post is in the same root folder link to it
+      if (posts[index - 1] != null) {
+
+        path = posts[index - 1].fields.slug;
+        indexOfFirst = path.indexOf('/', 1);
+        var previousPathRoot = path.substring(1, indexOfFirst);
+
+        if (thisPathRoot != previousPathRoot) {
+          previousPostId = null
+        }
+        else {
+          previousPostId = index === 0 ? null : posts[index - 1].id
+        }
+      }
+
+      // If the next post is in the same root folder link to it
+      if (posts[index + 1] != null) {
+
+        path = posts[index + 1].fields.slug;
+        indexOfFirst = path.indexOf('/', 1);
+        var nextPathRoot = path.substring(1, indexOfFirst);
+
+        if (thisPathRoot != nextPathRoot) {
+          nextPostId = null
+        }
+        else {
+          nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+        }
+      }
 
       createPage({
         path: post.fields.slug,
