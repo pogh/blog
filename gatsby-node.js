@@ -82,7 +82,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
 
       // If the next post is in the same root folder link to it
-      if (posts[index + 1] != null) {
+      if (posts[index + 1] == null) {
           nextPostId = null
       }
       else {
