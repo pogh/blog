@@ -63,8 +63,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       console.log('currentPathRoot:' + currentPathRoot)
 
       // If the previous post is in the same root folder link to it
-      if (posts[index - 1] != null) {
-
+      if (posts[index - 1] == null) {
+        previousPostId = null
+      }
+      else {
         thisPost = posts[index - 1]
         path = thisPost.fields.slug
         indexOfFirst = path.indexOf('/', 1)
@@ -81,7 +83,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       // If the next post is in the same root folder link to it
       if (posts[index + 1] != null) {
-
+          nextPostId = null
+      }
+      else {
         thisPost = posts[index + 1]
         path = thisPost.fields.slug
         indexOfFirst = path.indexOf('/', 1)
