@@ -1,7 +1,7 @@
 ---
 title: Data Warehouse Power BI
-date: "2015-07-01"
-description: "Data Warehouse Power BI"
+date: "2019-08-04"
+description: "An ETL Pipeline with Power BI"
 ---
 # Data Warehouse Power BI
 
