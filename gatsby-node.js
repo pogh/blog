@@ -57,6 +57,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path = thisPost.fields.slug
       indexOfFirst = path.indexOf('/', 1);
       var currentPathRoot = path.substring(1, indexOfFirst)
+      
+      console.log('----------------')
+      console.log('currentPathRoot:' + currentPathRoot)
 
       // If the previous post is in the same root folder link to it
       if (posts[index - 1] != null) {
@@ -65,6 +68,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path = thisPost.fields.slug
         indexOfFirst = path.indexOf('/', 1)
         var previousPathRoot = path.substring(1, indexOfFirst)
+        console.log('previousPathRoot:' + previousPathRoot)
 
         if (currentPathRoot == previousPathRoot) {
           previousPostId = index === 0 ? null : thisPost.id
@@ -81,6 +85,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path = thisPost.fields.slug
         indexOfFirst = path.indexOf('/', 1)
         var nextPathRoot = path.substring(1, indexOfFirst)
+        console.log('nextPathRoot:' + nextPathRoot)
 
         if (currentPathRoot == nextPathRoot) {
           nextPostId = index === posts.length - 1 ? null : thisPost.id
