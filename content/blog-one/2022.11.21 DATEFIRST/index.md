@@ -30,7 +30,3 @@ To confirm, I ran a job in SQL Server Agent:
 
 And there we have it.  The first day of the week for SQL Server Agent is Sunday.  The solution was explicitly  setting ```DATEFIRST``` in the stored procedure.
 
-
-Things to remember:
-* SQL Server Agent Job might have different environment settings to you
-
