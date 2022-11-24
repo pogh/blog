@@ -59,6 +59,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       var currentPathRoot = path.substring(1, indexOfFirst)
       
       console.log('----------------')
+      console.log('slug:' + thisPost.fields.slug)
       console.log('currentPathRoot:' + currentPathRoot)
 
       // If the previous post is in the same root folder link to it
