@@ -25,8 +25,7 @@ const Now = ({ data, location }) => {
 			<div>
 				<h2>This blog!</h2>
 				<p>
-					I’m still tinkering with the Gatsby <a href="https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog">gatsby-starter-blog</a>
-					for this site.  
+					I’m still tinkering with the Gatsby <a href="https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog">gatsby-starter-blog</a> for this site.  
 				</p>
 			</div>
 			<div>
@@ -51,7 +50,7 @@ const Now = ({ data, location }) => {
 				<h2>Low Oxalate Diet</h2>
 				<p>
 					The adjustment has been a bit of shock and I’m still working through it, but I wouldn’t have believed the difference in the way I feel.
-					This is really long term project.
+					This is really a long term project.
 				</p>
 			</div>
             <footer>
