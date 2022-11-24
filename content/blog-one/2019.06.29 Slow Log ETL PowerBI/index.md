@@ -1,6 +1,6 @@
 ---
-title: ETL
-date: "2015-06-19"
+title: Slow Log ETL & PowerBI
+date: "2015-06-29"
 description: "Using Power BI to present a MariaDb ‘slow query log’"
 ---
 # ETL
