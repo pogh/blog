@@ -93,4 +93,3 @@ power.t.test(
     power = NULL,		# power of test (1 minus Type II error probability)
 )
 ```
-

@@ -35,5 +35,3 @@ description: Models are fitted to data (not the other way round)
 ```coef``` | the coefficients (estimated parameters) from the model fitted the fitted values, predicted by the model for the values of the explanatory variables that appear in the data frame
 ```resid``` | the residuals (the differences between measured and predicted values of y)
 ```predict``` | uses information from the fitted model to produce smooth functions for plotting a curve through the scatterplot of your data. 
-
-
