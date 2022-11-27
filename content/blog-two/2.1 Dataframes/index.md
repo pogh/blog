@@ -1,7 +1,7 @@
 ---
 title: Dataframes
 date: "2022-11-23"
-description: Get to know your data first
+description: "Get to know your data first: It is essential to spend time on understanding the patterns in your data before you embark on the statistics."
 ---
 
 Load a dataframe: ```worms <- read.csv("worms.csv")```
@@ -36,7 +36,6 @@ Returns index: ```which(y > 10)```
 
 Returns count of factor levels: ```table(data$column)```
 
-Conditioning Plot: ```coplot(y∼x|z,pch=16,panel=panel.smooth)```
+Conditioning Plot: ```coplot(y~x|z,pch=16,panel=panel.smooth)```
 
-___
-p.39
+Interaction: ```tapply(response_variable, list(factor_1, factor_2), mean```
