@@ -66,7 +66,7 @@ Write like this:
 A confidence interval shows the likely range in which the mean would fall if the sampling exercise were to be repeated.
 
 $$
-confidence interval = t-value \times standard error
+\text{confidence interval} = \text{t-value} \times \text{standard error}
 $$
 
 ```r
