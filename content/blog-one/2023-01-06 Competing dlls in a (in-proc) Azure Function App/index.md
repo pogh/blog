@@ -25,7 +25,7 @@ the dll, and just return the one you have already loaded.  Otherwise it will go 
 for the one you donʼt have, causing problems.
 
 
-```c#
+```csharp
 private Assembly NewtonsoftResolver(object sender, ResolveEventArgs args)
 {
 	if (args.Name.StartsWith("Newtonsoft.Json, "))
@@ -51,7 +51,7 @@ private Assembly NewtonsoftResolver(object sender, ResolveEventArgs args)
 
 Then you add the handler in the startup.  
 
-```c#
+```csharp
 public class Startup : FunctionsStartup
 {
 	public override void Configure(IFunctionsHostBuilder builder)

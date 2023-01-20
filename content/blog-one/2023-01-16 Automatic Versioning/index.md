@@ -12,7 +12,7 @@ some meaning (to you, at least).
 You need to edit the ```.csproj``` file and modify the ```version``` tags.
 
 
-```c#
+```csharp
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
 	<snip/>
