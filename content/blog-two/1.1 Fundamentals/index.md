@@ -17,7 +17,7 @@ description: Variation is normal, but how much occurs by chance alone?  Statisti
 * **null hypothese**: Nothing is happening
 * **p-value**: An estimate of the probability that a value of the test statistic, or a value more extreme than this, could have occurred by chance when the null hypothesis is true.
 
-## Chosing a statistical method
+## Choosing a statistical method
 
 ### The explanatory variables (pick one of the rows):
 
