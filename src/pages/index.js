@@ -25,9 +25,6 @@ const Home = ({ data, location }) => {
       <p>
         <Link to="/blog-two">blog-two</Link> are my online notes for the book I'm going through <span style={{ fontWeight: 'bold' }}>Statistics - An Introduction Using R</span>.
       </p>
-      <p>
-        <Link to="/blog-three">blog-three</Link> are the clichés I live my life by.  
-      </p>
       <h1>
         Regular Donations
       </h1>
