@@ -1,7 +1,7 @@
 ---
 title: Build Task for SSIS task
 date: "2023-08-04"
-description: ""
+description: Post-build event command line to install an SSIS Task in the GAC when developing in Visual Studio
 ---
 
 ```cmd

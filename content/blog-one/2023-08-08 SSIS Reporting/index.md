@@ -1,20 +1,25 @@
 ---
 title: SSIS Reporting
 date: "2023-08-07"
-description: ""
+description: SQL to get SSIS job progress
 ---
 
+Find the job you’re interested in:
 
 ```sql
 USE [SSISDB]
 GO
 
-/*
 SELECT *
 FROM catalog.operations
 WHERE DATEDIFF(MINUTE, start_time, ISNULL(end_time, GETDATE())) > 10
 ORDER BY start_time DESC
-*/
+```
+
+And use the Operation Id here:
+
+```sql
+DECLARE @operation_id INT = /* ????? */; 
 
 SELECT 
 	msg.operation_message_id,
@@ -51,9 +56,8 @@ SELECT
 	msg.message
 FROM  catalog.operation_messages  AS msg
 JOIN  catalog.operations AS opr ON opr.operation_id = msg.operation_id
---WHERE message_time > CAST(GETDATE() -1 AS DATE)
-WHERE opr.operation_id = 128385
+WHERE opr.operation_id = @operation_id
   AND msg.message_type NOT IN (10, 20, 30, 40) -- Ignore Pre and Post
-  --AND msg.message_type = 110 -- Warning
 ORDER BY operation_id DESC, msg.operation_message_id DESC
+
 ```
