@@ -54,17 +54,17 @@ using (SpreadsheetDocument spreadsheetDocument = SpreadsheetDocument.Open(Path.C
 						int styleIndexid = Convert.ToInt32((string)child.StyleIndex);
 						int numberFormatId = numberFormats[styleIndexid];
 
+						// Strings which are stored in the share string table
+						if (dateType == "s")
+							cellValue = sharedStringTable.Take(Convert.ToInt32(child.CellValue.Text) + 1).Last().InnerText;
+
 						// Defined as date
-						if (dateType == "d")
+						else if (dateType == "d")
 							cellValue = Convert.ToDateTime(child.CellValue.Text).ToString("u");
 
 						// Formated as date
 						else if (numberFormatId == 14)
 							cellValue = DateTime.FromOADate(System.Convert.ToInt32(child.CellValue.Text)).ToString("u");
-
-						// Strings which are stored in the share string table
-						else if (dateType == "s")
-							cellValue = sharedStringTable.Take(Convert.ToInt32(child.CellValue.Text) + 1).Last().InnerText;
 
 						else
 							cellValue = child.CellValue.Text;
