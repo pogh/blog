@@ -6,13 +6,26 @@ description: ""
 
 ```csharp
 
-	public event EventHandler MyEvent;
+    public delegate void FeedbackHandler(object sender, string message);
+
+    public class Worker
+    {
+        public event FeedbackHandler Feedback;
 
 ```
 
 
 ```csharp
 	
-	MyEvent?.Invoke(this, EventArgs.Empty);
+	Feedback?.Invoke(this, EventArgs.Empty);
 	
 ```
+
+
+```csharp
+	worker.Feedback += (sender, message) =>
+	{
+		Console.WriteLine(message);
+	};
+```
+		
