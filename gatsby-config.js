@@ -13,19 +13,16 @@ module.exports = {
       {
         name: 'home',
         link: '/'
-      },
-      {
-        name: 'blog-one',
-        link: '/blog-one'
-      },
-      {
-        name: 'blog-two',
-        link: '/blog-two'
-      },
-      {
-        name: 'blog-three',
-        link: '/blog-three'
-      }
+        }
+      //,
+      //{
+      //  name: 'blog-one',
+      //  link: '/blog-one'
+      //},
+      //{
+      //  name: 'blog-two',
+      //  link: '/blog-two'
+      //}
     ]
   },
   plugins: [

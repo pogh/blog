@@ -11,9 +11,7 @@ const BlogIndex = ({ data, location }) => {
     return (
         <Layout location={location} title={"blog-one"}>
             <p>
-                This is not another blog explaining how I worked though the example on 
-                MSDN (now the all new improved Microsoft Learn&trade;&hellip;), but
-                on-line notes for me.
+                This is a place holder for blog one.
             </p>
             <Bio />
             <ol style={{ listStyle: `none` }}>
