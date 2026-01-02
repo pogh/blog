@@ -11,8 +11,7 @@ const BlogIndex = ({ data, location }) => {
     return (
         <Layout location={location} title={"blog-two"}>
             <p>
-                OK&hellip; keep me honest&hellip; I really did read this book 
-                and might have learned something along the way.
+                This is a place holder for blog one.
             </p>
             <Bio />
             <ol style={{ listStyle: `none` }}>
